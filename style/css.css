@@ -198,6 +198,7 @@ header .navbar  .swap-nav .navbar-collapse {
     color: rgba(255, 255, 255, 1);
     line-height: 100%;
     font-size: 1.25rem;
+    z-index: 5;
 }
 
 .sec .show a{
@@ -291,7 +292,7 @@ header .navbar  .swap-nav .navbar-collapse {
 .content a i:hover{
     transform: scale(1.5);
 }
-.gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7,.gradient8{
+.gradient1,.grad,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7,.gradient8{
  display: none;
 }
 .sec2 h1{
@@ -938,32 +939,21 @@ gap: 10px;
         width: 56%;
         left: 48%;
       }
-    .gradient1{
+
+    .grad{
         position: absolute;
-        left: 54%;
-        top: 63%;
-        width: 42%;
-        height: 66%;
-        z-index: 1;
-        clip-path: polygon(100% 92%, 6% 84%, 100% 2%);
-        transform: rotate(223deg);
+        left: 84%;
+        top: 40%;
+        display: block;
+        width: 80%;
+        height: 200%;
+        transform: rotate(135deg);
+        z-index: 2;
         background-image: linear-gradient(rgba(231, 62, 62, 1),rgba(184, 23, 31, 1));
         border: 22px solid rgba(222, 171, 114, 1);
-        filter: drop-shadow(0 -27px 4px 0 rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0px -27px 4px rgba(0, 0, 0, 0.25));
     }
-    .gradient2 {
-        position: absolute;
-        left: 73%;
-        top: 39%;
-        width: 44%;
-        height: 70%;
-        z-index: 1;
-        clip-path: polygon(100% 61%, -93% 83%, 112% 0%);
-        transform: rotate(-113deg);
-        background-image: linear-gradient(rgba(231, 62, 62, 1), rgba(184, 23, 31, 1));
-        border: 22px solid rgba(222, 171, 114, 1);
-        filter: drop-shadow(0 27px 4px rgba(0, 0, 0, 0.25));
-    }
+
     .sec .pic .image{
         position: relative;
     }
@@ -988,17 +978,17 @@ gap: 10px;
     
 }
 @media(min-width:1200px){
-    .gradient2{
-    position: absolute;
-        left: 73%;
-        top: 49%;
-        width: 42%;
-        height: 50%;
-        z-index: 1;
-        clip-path: polygon(100% 59%, 0% 48%, 109% 0%);
-        transform: rotate(-113deg);
-        background-image: linear-gradient(rgba(231, 62, 62, 1), rgba(184, 23, 31, 1));
+    .grad{
+        position: absolute;
+        left: 84%;
+        top: 40%;
+        display: block;
+        width: 80%;
+        height: 240%;
+        transform: rotate(135deg);
+        z-index: 2;
+        background-image: linear-gradient(rgba(231, 62, 62, 1),rgba(184, 23, 31, 1));
         border: 22px solid rgba(222, 171, 114, 1);
-        filter: drop-shadow(0 27px 4px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0px -27px 4px rgba(0, 0, 0, 0.25));
     }
 }
