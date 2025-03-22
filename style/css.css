@@ -1,0 +1,1004 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+p,h1,h2,h3,h4,h5,h6,li,ul{margin-bottom: 0;}
+@font-face {
+    font-family: Inter-Medium;
+    src: url(../fonts/Inter_28pt-Medium.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter_28pt-Regular.ttf);
+}
+@font-face {
+    font-family: Manrope-Medium;
+    src: url(../fonts/Manrope-Medium.ttf);
+}
+@font-face {
+    font-family: Manrope-Regular;
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: Manrope-SemiBold;
+    src: url(../fonts/Manrope-SemiBold.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoSlab-SemiBold;
+    src: url(../fonts/RobotoSlab-SemiBold.ttf);
+}
+@font-face {
+    font-family: segoeuithibd;
+    src: url(../fonts/segoeuithibd.ttf);
+}
+@font-face {
+    font-family: segoeuithis;
+    src: url(../fonts/segoeuithis.ttf);
+}
+@font-face {
+    font-family: segoeuithisi;
+    src: url(../fonts/segoeuithisi.ttf);
+}
+@font-face {
+    font-family: segoeuithisz;
+    src: url(../fonts/segoeuithisz.ttf);
+}
+:root{
+    --primary-color:#F7F8F9;
+    --secondary-color:#8896AB;
+}
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background-color: #eee;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a09c9c;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #383232;
+}
+ html{
+    font-size: 14px;
+ }
+ header{
+    height: 130vh;
+    background-color: #383232;
+ }
+.expand{
+    width: 100%;
+    margin-inline: auto;
+}
+.swap-nav{
+    display: flex;
+    gap: 10px;
+  width: 66%;
+  justify-content: space-between;
+}
+.expand .start{
+    color: #F0FDF4;
+    line-height: 20px;
+    text-align: center;
+    font-size: .875rem;
+    font-family:Manrope-SemiBold ;
+    border-radius: 68px;
+    padding: 12px 7px;
+    background-image:linear-gradient(#B8171F,#B9141C);
+    filter: drop-shadow(0px 2px 3px #00000040);
+}
+.navbar-brand{
+    display: flex;
+     gap: 8px;
+     margin-right: 0;
+     align-items: center;
+}
+.navbar-brand span{
+    font-size:1.5rem ;
+    line-height: 100%;
+    font-family: RobotoSlab-SemiBold;
+    color: #fff;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background-color: #383232;
+    filter: drop-shadow(0 7px 4px #00000080);
+} 
+.navbar-toggler{
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+header .navbar  .swap-nav .navbar-collapse {
+    position: absolute;
+    left: 10px;
+    top: 103%;
+    flex-grow: 0;
+    flex-basis: 100%;
+    width: 95%;
+    border-radius: 10px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: black;
+  }
+.navbar-toggler i {
+    font-size: 24px;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.navbar-nav .nav-link{
+    font-family:  Manrope-Medium;
+    font-size: 1.125rem;
+    line-height: 24px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    color: var(--secondary-color);
+}
+.navbar-nav .active{
+    color: var(--primary-color) !important;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--primary-color);
+}
+.navbar-nav .nav-link::after,.nav-link.active::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 100%;
+    height: 4px;
+    width: 0;
+    background-color: #B8171F;
+    transition: 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover::after,.nav-link.active::after{
+    width: 100%;
+}
+.sec{
+    padding-top: 100px;
+}
+.sec .show{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sec .show .shop{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.sec .show .shop h1 span{
+    line-height: 3rem;
+}
+.sec .show .shop h1{
+    font-family: segoeuithibd;
+    letter-spacing: 4px;
+    background: linear-gradient(#E8DDC1, #DEAB72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+    filter: drop-shadow(8px 0 31.7px 0 #000000B2);
+    font-size: 3.125rem;
+    line-height: 2.1875rem;
+}
+.sec .show .shop p{
+    font-family:  RobotoSlab-SemiBold;
+    font-size: 1.5rem;
+    line-height: 26px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 1);
+}
+.sec .show p{
+    color: rgba(255, 255, 255, 1);
+    line-height: 100%;
+    font-size: 1.25rem;
+}
+
+.sec .show a{
+    color: rgba(67, 4, 7, 1);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 20px;
+    font-family: Manrope-SemiBold;
+    border-radius: 68px;
+    align-self: flex-start;
+    padding: 18px 17px;
+    background-image: linear-gradient(rgba(232, 221, 193, 1), rgba(222, 171, 114, 1));
+    filter: drop-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.25));
+}
+.sec .pic{
+    width: 100%;
+    position: relative;
+    left: 0%;
+}
+.sec1 h1{
+    line-height: 40px;
+    font-size: 1.75rem;
+    font-family: Roboto-Regular;
+    text-align: center;
+    position: relative;  
+}
+.sec1 h1 span{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+   
+}
+.sec1 h1 span img{
+    width: 60%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content h4{
+    font-size: 1.5rem;
+    line-height: 24px;
+    font-family:Roboto-Regular ;
+    padding-top: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.content p{
+    font-family: Manrope-Regular;
+    font-size: 1.125rem;
+    line-height: 19px;
+    color: rgba(198, 150, 92, 1);
+  
+}
+.content h4:hover{
+    color: #B9141C;
+}
+.sec1 .pad{
+    padding: 20px;
+}
+.content a{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    color: rgba(51, 51, 51, 1);
+}
+.content a:hover{
+    color: red;
+}
+.content a span{
+    font-size: 1.125rem;
+    line-height: 14px;
+    font-family: Manrope-Regular;
+}
+
+.content a i{
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+.hover{
+    transition: 0.3s ease-in-out;
+    border-block: rgb(247, 163, 169) 1px solid;
+}
+.hover:hover{
+    background-color: rgb(247, 163, 169);
+    transform: scale(1.1);
+    border-block: rgb(247, 163, 169) 1px solid;
+}
+.content a i:hover{
+    transform: scale(1.5);
+}
+.gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7,.gradient8{
+ display: none;
+}
+.sec2 h1{
+    line-height: 40px;
+    font-size: 1.75rem;
+    font-family: Roboto-Regular;
+    text-align: center;
+    position: relative;  
+}
+.sec2 h1 span{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+   
+}
+.sec2 h1 span img{
+    width: 60%;
+}
+.sec2 .amazing{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    font-size: 19px;
+    font-family: Manrope-Regular;
+}
+.sec2 .follow{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.3s ease-in-out;
+    perspective: 1000px;
+}
+.sec2 .follow:hover{
+    transform:  skewY(20deg) scale(1.1);
+    overflow: hidden;
+}
+.sec2 .follow a{
+    background-image: linear-gradient(rgba(51, 45, 45, 1),rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    width: 62%;
+}
+.sec2 .BookPoin {
+    background-image: linear-gradient(rgba(231, 62, 62, 1),rgba(82, 10, 14, 1)) !important;
+    
+}
+.sec2 .BookPoin span{
+    color: rgba(232, 221, 193, 1) !important;
+}
+.sec2 .BookPoin i{
+    color: rgba(232, 221, 193, 1) !important;
+    background-color: rgba(82, 10, 14, 1) !important;
+}
+.sec2 .follow a span{
+    color: rgba(198, 150, 92, 1);
+    font-size: 1.1875rem;
+    font-family: Roboto-Regular;
+    line-height: 24px;
+}
+.sec2 .follow a i{
+    background-color: rgba(198, 150, 92, 1);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #DEAB72;
+    width: 30%;
+    height: 44px;
+    bottom: -40%;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .follow:nth-child(6) a i{
+    bottom: -41% !important;
+}
+.sec2 .follow:nth-child(2) a i{
+    bottom: -43% !important;
+}
+.sec2 .follow:nth-child(3) a i{
+    bottom: -43% !important;
+}
+.sec3 .work{
+    line-height: 40px;
+    font-size: 1.75rem;
+    font-family: Roboto-Regular;
+    text-align: center;
+    position: relative;  
+}
+.sec3 h1 span{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+}
+.sec3 h1 span img{
+    width: 60%;
+}
+.sec3 .pic2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 19px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 5px 5px rgb(217 203 186 / 39%)
+}
+.sec3 .pic2 h1{
+    font-size: 1.825rem;
+    color: rgba(51, 51, 51, 1);
+    font-family:RobotoSlab-SemiBold ;
+    line-height: 20px;
+    text-align: center;
+}
+.sec3 .pic2 p{
+    font-size: 1.125rem;
+    color: rgba(102, 102, 102, 1);
+    font-family: Manrope-Regular ;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.sec4 h1{
+    line-height: 40px;
+    font-size: 1.75rem;
+    font-family: Roboto-Regular;
+    text-align: center;
+    position: relative;  
+}
+.sec4 h1 span{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+   
+}
+.color{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(51, 45, 45, 1),rgba(0, 0, 0, 1));
+    filter: drop-shadow(6px 0 8.2px 0 rgba(51, 45, 45, 0.5));
+}
+
+.collect li:nth-child(1) a{
+    background-color: rgba(197, 150, 92, 1);
+    padding: 10px 15px;
+    
+    border-radius: 32px;
+}
+.collect{
+    display: flex;
+    gap: 40px;
+}
+.collect li a{
+    color: rgba(255, 255, 255, 1);
+    line-height: 25px;
+    font-size: 16px;
+    font-family: Manrope-Regular;
+}
+.sec4 h1 span img{
+    width: 60%;
+}
+.sec4 .plan{
+    background-image: linear-gradient(rgba(231, 62, 62, 1),rgba(129, 35, 35, 1));
+    filter: drop-shadow(6px 0 8.2px 0 rgba(51, 45, 45, 0.5));
+    border-radius: 24px;
+    width: 295px;
+}
+.sec4 .money{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-block: 15px;
+}
+.sec4 .money h1{
+    font-size: 1.125rem;
+    line-height: 24px;
+    text-align: center;
+    font-family: RobotoSlab-SemiBold;
+    color: rgba(255, 255, 255, 1);
+    
+}
+.sec4 .price{
+    --bs-gutter-x:0
+}
+.sec4 .money span{
+    font-family:  Inter-Regular;
+    font-size: 1.5rem;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+
+}
+.sec4 .all .page span{
+display: flex;
+gap: 10px;
+}
+.sec4 .all .page span i{
+    color: rgba(198, 150, 92, 1);
+}
+.sec4 .all .page span li{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-family: Inter-Regular;
+    line-height: 21px;
+}
+.sec4 .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.sec4 .feature p{
+    font-family: Inter-Regular;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: rgba(198, 150, 92, 1);
+}
+.sec4 .feature ul{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 29px;
+}
+.sec4 .feature ul li:nth-child(1) a{
+    background-image: linear-gradient(rgba(51, 45, 45, 1),rgba(0, 0, 0, 1));
+    border-radius: 35px;
+    color: rgba(198, 150, 92, 1);
+    line-height: 18px;
+    font-family: Inter-Regular;
+    font-size: 1.2rem;
+    padding: 13px 17px;
+}
+.sec4 .feature ul li:nth-child(2) a{
+    background-image: linear-gradient(rgba(232, 221, 193, 1),rgba(222, 171, 114, 1));
+    border-radius: 35px;
+    color: rgba(67, 4, 7, 1);
+    filter: drop-shadow(0 4px 4px 0 rgba(0, 0, 0, 0.25));
+    line-height: 18px;
+    font-family: Inter-Regular;
+    font-size: 1.2rem;
+    padding: 11px 19px;
+}
+.sec5 .copy{
+    height: 15vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: rgba(67, 63, 62, 1);
+}
+.sec5 .copy p {
+    color: rgba(231, 62, 62, 1);
+    font-size: 1rem;
+    font-family:Manrope-Regular ;
+    line-height: 19px;
+}
+.sec5 .back{
+    height: 90vh;
+    background-color: rgba(197, 175, 150, 1);
+}
+.sec5 .exam p {
+    color: rgba(102, 102, 102, 1);
+    line-height: 24px;
+    font-size: 18px;
+    font-family: Manrope-Regular;
+}
+.sec5 .foll{
+    position: relative;
+}
+.sec5 .foll::after{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 100%;
+    background-color: 2px solid rgba(239, 50, 44, 0.1);
+} 
+.sec5 .about{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.sec5 .about h3{
+    color: rgba(51, 51, 51, 1);
+    font-family: Roboto-Regular;
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+.sec5 .about li a{
+    color: rgba(102, 102, 102, 1);
+    font-size: 1rem;
+    font-family: Manrope-Regular;
+}
+.sec5 .about1{
+    display: flex;
+    gap: 25px;
+    padding-bottom: 14px;
+    padding-left: 0;
+}
+.sec5 .about1 li a{
+    color: rgba(102, 102, 102, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 10px;
+}
+.sec5 .about1 li a i{
+    font-size: 20px;
+}
+.sec5 .road{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sec5 .road h3{
+    color: rgba(51, 51, 51, 1);
+    font-family: Roboto-Regular;
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+.sec5 .road p{
+    font-family:Manrope-Regular ;
+    font-size: 1rem;
+    line-height: 20px;
+    color: rgba(102, 102, 102, 1);
+}
+@media(min-width:576px){
+    html{
+        font-size: 16px;
+    }
+    header .navbar .swap-nav .navbar-collapse {
+        position: static;
+        background-color: transparent;
+        justify-content: center;
+        flex-basis: auto;
+        width: auto;
+        padding-inline: 0;
+    }
+    .navbar-nav{
+        padding-right: 0;
+    }
+    .navbar-brand span{
+        font-size: 1rem;
+    }
+    header .navbar  .swap-nav {
+        width: 78%;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+      .expand{
+        min-width: 589px;
+        padding-inline: 0 !important; 
+        justify-content: space-evenly;
+      }
+
+      .navbar-nav .nav-link{
+        padding-right: 0 !important;
+        font-size: 1rem;
+        padding-left: 0.2rem !important;
+      }
+    .content p{
+        line-height: 24px;
+    }
+    .content h4{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .sec1 .pad{
+        padding: 1px;
+    }
+    .hover{
+        transition: 0.3s ease-in-out;
+        border-block: 0;
+    }
+    .sec2 .follow:nth-child(1) a i{
+        bottom: -42% !important;
+    }
+    .sec2 .follow:nth-child(2) a i{
+        bottom: -42% !important;
+    }
+    .sec2 .follow:nth-child(6) a i{
+        bottom: -42% !important;
+    }
+    .sec4 .plan{
+        width: 350px;
+    }
+    .sec4 .feature ul{
+        gap: 21px;
+    }
+    .sec5 .back .about{
+        padding-left: 0;
+    }
+    .sec5 .back{
+        height: 70vh;
+        background-color: rgba(197, 175, 150, 1);
+    }
+    .sec6 .about1{
+        padding-bottom: 0;
+    }
+}
+@media(min-width:768px){
+    html{
+        font-size: 16px;
+    }
+
+      header .navbar .swap-nav{
+        display: flex;
+        gap: 10px;
+        width: 77%;
+        justify-content: space-between;
+    }
+    .expand .start{
+        padding: 12px 7px;
+    }
+    .navbar-nav{
+        gap: 25px;
+    }
+  .navbar .navbar-nav .nav-link{
+    padding-right: 0.5rem !important;
+   }
+   .navbar-nav .nav-link{
+    padding-right: 0.5rem !important;
+    font-size: 1.2rem;
+    padding-left: 0.5rem !important;
+  }
+  .navbar-brand span{
+    font-size: 1.5rem;
+  }
+    .sec .show .shop h1{
+        font-size: 5.375rem;
+        line-height: 5.1875rem;
+    }
+    .sec .show .shop p{
+        font-family:  RobotoSlab-SemiBold;
+        font-size: 1.5rem;
+        line-height: 26px;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 1);
+    }
+    .sec .show p{
+        color: rgba(255, 255, 255, 1);
+        line-height: 100%;
+        font-size: 1.5rem;
+    }
+  .sec .image img{
+    width: 81% !important;
+  }
+  .sec1 h1{
+    font-size: 3.5rem;
+  }
+  .sec1 h1 span{
+    position: absolute;
+    top: 58%;
+    left: 44%;
+   
+}
+  .sec1 h1 span img{
+    width: 100%;
+}
+  .sec2 h1{
+    font-size: 3.5rem;
+  }
+  .sec2 h1 span{
+    position: absolute;
+    top: 80%;
+    left: 52%; 
+}
+  .sec2 h1 span img{
+    width: 100%;
+}
+.sec2 .follow{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.3s ease-in-out;
+    perspective: 1000px;
+}
+.sec2 .follow:hover{
+    transform:  skewY(20deg) scale(1.1);
+    overflow: hidden;
+}
+.sec2 .follow a{
+    background-image: linear-gradient(rgba(51, 45, 45, 1),rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    width: 62%;
+}
+.sec2 .BookPoin {
+    background-image: linear-gradient(rgba(231, 62, 62, 1),rgba(82, 10, 14, 1)) !important;
+    
+}
+.sec2 .BookPoin span{
+    color: rgba(232, 221, 193, 1) !important;
+}
+.sec2 .BookPoin i{
+    color: rgba(232, 221, 193, 1) !important;
+    background-color: rgba(82, 10, 14, 1) !important;
+}
+.sec2 .follow a span{
+    color: rgba(198, 150, 92, 1);
+    font-size: 1.1875rem;
+    font-family: Roboto-Regular;
+    line-height: 24px;
+}
+.sec2 .follow a i{
+    background-color: rgba(198, 150, 92, 1);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #DEAB72;
+    width: 30%;
+    height: 44px;
+    bottom: -44%;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .follow:nth-child(1) a i{
+    bottom: -40% !important;
+}
+.sec2 .follow:nth-child(2){
+    padding-top: 100px;
+}
+.sec2 .follow:nth-child(5){
+    padding-top: 150px ;
+}
+.sec3 h1{
+    font-size: 3.5rem;
+  }
+  .sec3 h1 span{
+    position: absolute;
+    top: 80%;
+    left: 47%; 
+}
+  .sec3 h1 span img{
+    width: 100%;
+}
+.sec4 h1{
+    font-size: 3.5rem;
+  }
+  .sec4 .plan{
+    width: 295px;
+  }
+  .sec4 h1 span{
+    position: absolute;
+    top: 58%;
+    left: 44%;
+   
+}
+  .sec4 h1 span img{
+    width: 100%;
+}
+.sec5 .back{
+    height: 70vh;
+    background-color: rgba(197, 175, 150, 1);
+}
+.sec5 .back .about{
+    padding-left: 0;
+}
+}
+@media(min-width:992px){
+    html{
+        font-size: 16px;
+    }
+    .expand{
+        width: 95%;
+        margin-inline: auto;
+    }
+    header .navbar {
+        position: fixed;
+        width: 100%;
+      }
+    
+      header .navbar  .swap-nav .navbar-collapse {
+        justify-content: flex-end;
+      }
+      .sec .pic{
+        width: 56%;
+        left: 0%;
+      }
+      .sec .image img{
+        width: 100% !important;
+      }
+      .content h4{
+        font-size: 30px;
+    }
+    .gradient3{
+        left: 80%;
+        bottom: 80%;
+        display: block;
+    }
+    .gradient4{
+        left: -10%;
+        bottom: 80%;
+        display: block;
+    }
+    .gradient5{
+        left: -10%;
+        bottom: 88%;
+        display: block;
+    }
+    .gradient6{
+        left: 90%;
+        bottom: 88%;
+        display: block;
+    }
+    .gradient7{
+      right: -5%;
+      bottom: 70%;
+      display: block;
+    }
+    .gradient8{
+         display: block;
+         bottom: 70%;
+         left: -4%;
+    }
+    .sec2 .follow a i{
+        bottom: -40%;
+    }
+    .sec2 .follow:nth-child(4) a i,
+    .sec2 .follow:nth-child(5) a i,
+    .sec2 .follow:nth-child(6) a i{
+       bottom: -43%;
+    }
+    .sec5 .back{
+        height: 40vh;
+        background-color: rgba(197, 175, 150, 1);
+    }
+    .sec5 .back .about{
+        padding-left: 2rem;
+    }
+}
+@media(min-width:1115px){
+    html{
+        font-size: 16px;
+    }
+    header{
+        position: relative;
+        overflow: hidden;
+    }
+    .sec .pic{
+        width: 56%;
+        left: 48%;
+      }
+    .gradient1{
+        position: absolute;
+        left: 54%;
+        top: 63%;
+        width: 42%;
+        height: 66%;
+        z-index: 1;
+        clip-path: polygon(100% 92%, 6% 84%, 100% 2%);
+        transform: rotate(223deg);
+        background-image: linear-gradient(rgba(231, 62, 62, 1),rgba(184, 23, 31, 1));
+        border: 22px solid rgba(222, 171, 114, 1);
+        filter: drop-shadow(0 -27px 4px 0 rgba(0, 0, 0, 0.25));
+    }
+    .gradient2 {
+        position: absolute;
+        left: 73%;
+        top: 39%;
+        width: 44%;
+        height: 70%;
+        z-index: 1;
+        clip-path: polygon(100% 61%, -93% 83%, 112% 0%);
+        transform: rotate(-113deg);
+        background-image: linear-gradient(rgba(231, 62, 62, 1), rgba(184, 23, 31, 1));
+        border: 22px solid rgba(222, 171, 114, 1);
+        filter: drop-shadow(0 27px 4px rgba(0, 0, 0, 0.25));
+    }
+    .sec .pic .image{
+        position: relative;
+    }
+    .pic{
+        position: relative;
+        z-index: 5;
+    }
+    header .navbar .swap-nav{
+        display: flex;
+        gap: 10px;
+        width: 68%;
+        justify-content: space-between;
+    }
+
+    .sec2 .follow:nth-child(2) a i,
+    .sec2 .follow:nth-child(3) a i{
+       bottom: -43%;
+    }
+    .sec2 .follow:nth-child(1) a i{
+        bottom: -42% !important;
+    }
+    
+}
+@media(min-width:1200px){
+    .gradient2{
+    position: absolute;
+        left: 73%;
+        top: 49%;
+        width: 42%;
+        height: 50%;
+        z-index: 1;
+        clip-path: polygon(100% 59%, 0% 48%, 109% 0%);
+        transform: rotate(-113deg);
+        background-image: linear-gradient(rgba(231, 62, 62, 1), rgba(184, 23, 31, 1));
+        border: 22px solid rgba(222, 171, 114, 1);
+        filter: drop-shadow(0 27px 4px rgba(0, 0, 0, 0.25));
+    }
+}
